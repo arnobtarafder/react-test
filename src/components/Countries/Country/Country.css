@@ -1,0 +1,12 @@
+.country{
+    margin: 17px;
+    background-color: blanchedalmond;
+    padding: 10px 0px 10px 0px;
+}
+h3, h4{
+    font-weight: 400;
+}
+
+.country img{
+    width: 178px;
+}
