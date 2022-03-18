@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Country from './Country/Country';
-import './Countries.css'
+import './Countries.css';
 
 const Countries = () => {
     const [countries, setCountries] = useState([]);
+    console.log(countries, useState());
+    // console.log(useState());
+    // console.log(useState());
 
     useEffect( () => {
         fetch("https://restcountries.com/v3.1/all")
@@ -13,7 +16,7 @@ const Countries = () => {
 
     return (
         <div>
-            <h2>Mr. Countries: {countries.length} </h2>
+            <h2 className='text-secondary'>Mr. Countries: {countries.length} </h2>
             {/* <h2>Countries in other file.</h2> */}
             {/* <h2>Hello from Countries file</h2> */}
            <div className='countries-container'>
